@@ -1,5 +1,5 @@
 # portfolio
-sou um fullstack developer link do site: https://hellyeahsaliva-hub.github.io/portfolio/ Sou desenvolvedor fullstack, com foco em construir aplicações completas — do back-end ao front-end — priorizando código limpo, organização e performance. Tenho interesse em projetos que envolvem APIs, sistemas web e aplicações escaláveis.
+sou um fullstack developer link do site: https://hellyeahsaliva-hub.github.io/poortfolio/ Sou desenvolvedor fullstack, com foco em construir aplicações completas — do back-end ao front-end — priorizando código limpo, organização e performance. Tenho interesse em projetos que envolvem APIs, sistemas web e aplicações escaláveis.
 
 Este repositório funciona como meu portfólio, reunindo projetos que demonstram minhas habilidades técnicas e minha evolução como desenvolvedor.
 
