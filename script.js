@@ -123,7 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 });
-fetch('https://backend-fmtg.onrender.com/api/status')
+fetch('https://backend-fmtg.onrender.com')
   .then(res => res.json())
   .then(data => {
     const el = document.createElement('pre');
@@ -145,4 +145,5 @@ fetch('https://backend-fmtg.onrender.com/api/status')
   .catch(() => {
     console.log('Erro ao conectar backend');
   });
+
 
