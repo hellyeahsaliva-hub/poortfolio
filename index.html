@@ -1,12 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="./style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -1291,5 +1290,37 @@ router.post('/movies', authenticateJWT, isAdmin, uploadMovieImages, async (req, 
         // Inicia a verificação do status quando a página carregar
         document.addEventListener('DOMContentLoaded', checkServerStatus);
     </script>
+    <div id="server-status" style="
+  background:#111;
+  color:#0f0;
+  padding:15px;
+  margin-top:40px;
+  font-family:monospace;
+">
+  🔴 Conectando ao servidor...
+</div>
+
+<script>
+fetch('https://backend-fmtg.onrender.com/api/status')
+  .then(res => res.json())
+  .then(data => {
+    document.getElementById('server-status').innerHTML =
+      '🟢 BACKEND ONLINE<br><pre>' +
+      JSON.stringify(data, null, 2) +
+      '</pre>';
+  })
+  .catch(err => {
+    document.getElementById('server-status').innerHTML =
+      '🔴 ERRO AO CONECTAR AO BACKEND';
+  });
+</script>
+<h1 style="color:red; background:black;">
+  TESTE DE DEPLOY — SE VOCÊ VÊ ISSO, O SITE ATUALIZOU
+</h1>
 </body>
 </html>
+<link rel="stylesheet" href="./style.css">
+
+<script src="./script.js"></script>
+
+                 
